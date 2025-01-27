@@ -5,8 +5,6 @@ const navMenu = document.querySelector(".nav-items");
 const btnToggleNav = document.querySelector(".menu-btn");
 const workEls = document.querySelectorAll(".work-box");
 const workImgs = document.querySelectorAll(".work-img");
-const mainEl = document.querySelector("main");
-const yearEl = document.querySelector(".footer-text span");
 
 const toggleNav = () => {
   nav.classList.toggle("hidden");
@@ -37,7 +35,7 @@ document.body.addEventListener("keydown", (e) => {
   }
 });
 
-// Anima√ß√£o ao scrollar
+// AnimaÁ„o ao scrollar
 
 workImgs.forEach((workImg) => workImg.classList.add("transform"));
 
@@ -81,7 +79,7 @@ switchThemeEl.addEventListener("click", () => {
   }
 });
 
-// Prender tab quando menu est√° aberto
+// Prender tab quando menu est· aberto
 
 const lastFocusedEl = document.querySelector('a[data-focused="last-focused"]');
 
@@ -92,7 +90,7 @@ document.body.addEventListener("keydown", (e) => {
   }
 });
 
-// next: Anima√ß√£o de rota√ß√£o de logo
+// next: Anima√ß√£o de rotaÁ„o de logo
 
 const xp1 = document.body.querySelector("#xp1");
 const xp2 = document.body.querySelector("#xp2");
