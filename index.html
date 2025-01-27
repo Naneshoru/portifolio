@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="Bem-vindo ao meu portfolio. Sou Ricardo Atakiama.Construo interfaces com alto grau de customização para usuários,
+      por meio de tecnologias modernas que vêm evoluindo para garantir performance com uma boa experiência."
+    />
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/profile.jpeg"
+      type="image/png"
+    />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" type="module" defer></script>
+
+    <title>Ricardo Atakiama</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">Projetos</a></li>
+          <li class="nav-item"><a href="#skills">Tools</a></li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox ">
+          <h1 class="h1">
+            <p class="typewriter">Olá, sou Ricardo Atakiama</p>
+            <p>Desenvolvedor Frontend</p>
+          </h1>
+
+          <p class="header-text">
+            Construo interfaces com alto grau de customização para usuários,<br>
+            por meio de tecnologias modernas que vêm evoluindo para garantir performance com uma boa experiência.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta msg">Enviar mensagem</a>
+            <a href="#work" class="btn btn-secondary">Ver projetos</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Experiência</h2>
+
+          <div class="xp-btns">
+            <h4 id="xp1" class="h4 active">1</h4>
+            <h4 id="xp2" class="h4">2</h4>
+          </div>
+
+          <div class="logos">
+            <!-- hide to-top -->
+            <div 
+            id="g1"
+            class="logo-group active">
+              <img
+                loading="lazy"
+                src="assets/images/xp/sflabs.jpeg"
+                alt="SF Labs"
+                class="logo"
+              />   
+              <div class="logo-text">
+                <div class="logo-text-line">
+                  <h4 class="h4" style="color:inherit">Desenvolvedor Front-End (Estágio)</h4>
+                  <span>out de 2020 - nov de 2021 · 1 ano 2 meses</span>
+                </div>
+                <h4 style="color:white">SF Labs</h4>
+                <p class="logo-description">
+                  Começo da carreira como desenvolvedor front-end, onde tive a oportunidade de conhecer o dia a dia com a metodologia ágil, e desenvolvimento em uma startup real.
+
+                  Participei da refatoração de uma página de conciliação de cupons de compra com vídeos de compra fornecendo uma experiência de melhor qualidade de visualização e controle do vídeo, dos dados e opções para realizar o pareamento desses cupons com os vídeos. 
+                  Também sugeri melhorias em formulários de cadastro de múltiplas páginas, otimizando o código e escrevendo testes unitários e documentação.
+                  Criação de templates de e-mail da empresa com a linguagem de marcação MJML.
+                  <br><br>
+                  Figma | Angular | Typescript | Sass | Eslint | Prettier
+                </p>
+              </div>
+            
+            </div>
+
+            <div class="logo-group" id="g2"> 
+              <img
+                loading="lazy"
+                src="assets/images/xp/padtec.jpeg"
+                alt="Padtec"
+                class="logo"
+              />   
+              <div class="logo-text">
+                <div class="logo-text-line">
+                  <h4 class="h4" style="color:inherit">Desenvolvedor Front-End</h4>
+                  <span>jun de 2022 - set de 2024 | 2 ano 4 meses</span>
+                </div>
+                <h4 style="color:white">Padtec</h4>
+                <p class="logo-description">
+                  Participei de três projetos contribuindo uma biblioteca de 30 componentes com alto grau de customização (sem biblioteca externa), seu uso nas telas responsivas adaptadas para diferentes tamanhos de tela.
+                  A IA do Figma, por meio do Anima, foi utilizado para acelerar o processo.
+                  Tudo isso trouxe agilidade para criar novas opções ou modificar de acordo com o design. 
+                  Integrei apis e busquei soluções diversas para atender as necessidades dos projetos, são eles:
+                  <br><br>
+                  • Backoffice - gerenciamento das entidades<br>
+                  • Smart Site - monitoramento e controle de equipamentos de rede e;<br>
+                  • WFM - controle das atividades de campo.
+                  <br><br>
+                  Figma | React | Typescript | Vite | Storybook | Anima | Sass | Eslint | Prettier
+                </p>
+              
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Projetos</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <!-- PRIMEIRO -->
+              <div class="work-textbox">
+                <h3 class="h3">Cadastro de currículo</h3>
+                <p class="work-text">
+                  Um projeto para familiarizar com os diferentes tipos de input de dados, formulário com etapas, validações e confirmação dos dados.
+                </p>
+                <ol class="work-technologies">
+                  <li>React</li>
+                  <li>Material UI</li>
+                  <li>Scss</li>
+                  <li>Moment.js</li>
+                </ol>
+
+                <div class="work-links">
+                  <a href="https://atakiama-cadastro-de-curriculo.netlify.app/" target="_blank" rel="noopener" class="link"
+                  >Ver</a
+                  >
+                  
+                  <a href="https://github.com/Naneshoru/React-cadastro-de-curriculo" target="_blank" rel="noopener" class="link"
+                    >Ver no Github</a
+                  >
+
+                  <a
+                    href="https://github.com/Naneshoru/React-cadastro-de-curriculo"
+                    target="_blank"
+                    rel="noopener"
+                    title="Projeto cadastro de currículo"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/curriculo.jpg"
+                  alt="Projeto Cadastro de Currículo"
+                />
+              </picture>
+            </div>
+            <!-- SEGUNDO -->
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Vídeo aulas</h3>
+
+                <p class="work-text">Enquanto estudava React, tive a ideia de colocar em prática um projeto de visualização de vídeos com algumas interações especiais.</p>
+                <ol class="work-technologies">
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Material UI</li>
+                  <li>Scss</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://atakiama-video-aulas-redux.netlify.app/" target="_blank" rel="noopener" class="link"
+                  >Ver</a
+                  >
+                  <a 
+                    href="https://github.com/Naneshoru/React-Redux-video-aulas"
+                   target="_blank" rel="noopener" class="link"
+                    >Ver no Github</a
+                  >
+                  <a
+                    href="https://github.com/Naneshoru/React-Redux-video-aulas"
+                    target="_blank"
+                    rel="noopener"
+                    title="Projeto vídeo aulas"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/video-aulas.jpg"
+                  alt="portfolio template"
+                />
+              </picture>
+            </div>
+            <!-- TERCEIRO -->
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Catálogo de produtos</h3>
+                <p class="work-text">
+                  Este projeto foi um desafio para vaga de desenvolvedor Jr. O objetivo era criar um catálogo de produtos com a possibilidade de adicionar ao carrinho para a compra.
+                </p>
+                <ol class="work-technologies">
+                  <li>React</li>
+                  <li>Context Api</li>
+                  <li>Material UI</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://atakiama-catalogo-de-produtos.netlify.app/" target="_blank" rel="noopener" class="link"
+                  >Ver</a
+                  >
+
+                  <a href="https://github.com/Naneshoru/React-product-catalogue-challenge" target="_blank" rel="noopener" class="link"
+                    >Ver no Github</a
+                  >
+                  <a
+                    href="https://github.com/Naneshoru/React-product-catalogue-challenge"
+                    target="_blank"
+                    rel="noopener"
+                    title="Projeto catálogo de produtos"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/catalogo.jpg"
+                  alt="contribute dev"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">Tools</h2>
+          <div class="skills-imgs">
+
+            <div style="display: flex;">
+           
+              <p style="text-align: center;">
+                <img alt="figma" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/figma/figma-original.svg" loading="lazy">
+              </p>
+
+              <p style="display: flex;">
+                <span style="text-align: center;">
+                  <img alt="html" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" loading="lazy">
+                </span>
+              
+                <span style="text-align: center;">
+                  <img alt="css" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" loading="lazy">  
+                </span>
+              
+                <span style="text-align: center;">
+                  <img alt="js" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" loading="lazy">  
+                </span>
+              </p>
+
+              <p style="display: flex;">
+                <span style="text-align: center;">
+                  <img alt="react" height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" loading="lazy"/>
+                </span>
+                <span style="text-align: center;">
+                  <img alt="angular" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" loading="lazy">
+                </span>
+              </p>
+            </div>
+            
+            <div style="display: flex;">
+              <p style="display: flex;">
+                <span style="text-align: center;">
+                  <img alt="typescript" height="60" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" loading="lazy">
+                </span>
+                
+                <span style="text-align: center;">
+                  <img alt="sass" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/9f4f5cdb393299a81125eb5127929ea7bfe42889/icons/sass/sass-original.svg" loading="lazy">
+                </span>
+              
+                <span style="text-align: center;">
+                  <img alt="PostCss" height="60" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postcss/postcss-original.svg" loading="lazy">
+                </span>
+              
+                <span >
+                  <img alt="CSS Modules Logo" height="50" src="https://raw.githubusercontent.com/css-modules/logos/refs/heads/master/css-modules-logo.png" loading="lazy" backgroundColor="white"/>
+                </span>
+              </p>
+              
+              <p style="display: flex;">
+                <span style="text-align: center;">
+                  <img alt="vite" height="60" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" loading="lazy"/>
+                </span>
+              
+                <span style="text-align: center;">
+                    <img alt="storybook" height="60" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/storybook/storybook-original.svg" loading="lazy"/>
+                </span>
+              
+                <span style="text-align: center;">
+                  <img alt="anima" height="48" src="https://www.wappalyzer.com/images/icons/Anima.svg" loading="lazy"/> &nbsp;
+                </span>
+              </p>
+              <p style="display: flex;">
+                <span style="text-align: center;">
+                  <img alt="Eslint" height="60" width="80" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg" loading="lazy"/>
+                </span>
+              
+                <span style="text-align: center;">
+                  <img alt="Prettier" height="60" src="https://prettier.io/icon.png" loading="lazy">
+                </span>
+              </p>
+            </div>
+          
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <strong href="#" class="hire-alert">
+          <span class="indicator"></span>
+          Open to work
+        </strong>
+        <button type="submit" class="btn btn-cta msg">Enviar mensagem</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/Naneshoru" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/ricardo-atakiama-4827411b5/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
