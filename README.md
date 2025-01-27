@@ -1,5 +1,5 @@
 
-### Portif�lio - Ricardo Atakiama
+### Portifólio - Ricardo Atakiama
 
 ---
 
@@ -7,7 +7,7 @@
 <div align="center"> <a href="https://www.ratakiama.tech">Clique aqui para visitar</a> </div>
 
 
-## ?? Ferramentas usadas:
+## 🔨 Ferramentas usadas:
 
 - Live Server (VS Code Extension)
 - IntersectionObserver API
