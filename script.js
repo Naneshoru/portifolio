@@ -35,7 +35,7 @@ document.body.addEventListener("keydown", (e) => {
   }
 });
 
-// Animação ao scrollar
+// AnimaÃ§Ã£o ao scrollar
 
 workImgs.forEach((workImg) => workImg.classList.add("transform"));
 
@@ -79,7 +79,7 @@ switchThemeEl.addEventListener("click", () => {
   }
 });
 
-// Prender tab quando menu está aberto
+// Prender tab quando menu estÃ¡ aberto
 
 const lastFocusedEl = document.querySelector('a[data-focused="last-focused"]');
 
@@ -90,7 +90,7 @@ document.body.addEventListener("keydown", (e) => {
   }
 });
 
-// next: AnimaÃ§Ã£o de rotação de logo
+// next: AnimaÃ§Ã£o de rotaÃ§Ã£o de logo
 
 const xp1 = document.body.querySelector("#xp1");
 const xp2 = document.body.querySelector("#xp2");
@@ -125,3 +125,30 @@ btns.forEach(btn => {
     console.log('clicou')
   });
 });
+
+// ajustar altura do logos container dinamicamente
+
+const logosContainer = document.querySelector('.logos');
+const logoGroups = document.querySelectorAll('.logo-group');
+
+function updateLogosHeight() {
+  const activeLogoGroup = document.querySelector('.logo-group.active');
+  if (logosContainer && activeLogoGroup) {
+    logosContainer.style.height = `${activeLogoGroup.offsetHeight}px`;
+  }
+}
+
+const xpButtons = document.querySelectorAll('.xp-btns .h4');
+xpButtons.forEach(button => {
+  button.addEventListener('click', function() {
+  
+    logoGroups.forEach(group => group.classList.remove('active'));
+    
+    const targetId = this.id.replace('xp', 'g');
+    document.getElementById(targetId).classList.add('active');
+    
+    updateLogosHeight();
+  });
+});
+
+window.addEventListener('resize', updateLogosHeight);

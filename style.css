@@ -536,7 +536,7 @@ body.light .header {
 
 .xp-btns {
   display: flex; 
-  padding-left: 16rem; 
+  padding-left: min(16rem, 4%);
   padding-top: 4rem; 
   margin-bottom: -4rem; 
   gap: 1rem;
@@ -576,7 +576,6 @@ body.light .header {
   align-items: center;
   transition: all 2.4s cubic-bezier(0.25, 1, 0.5, 1);
   gap: 2rem;
-  width: 960px;
 }
 
 .logo {
@@ -632,9 +631,7 @@ body.light .logo {
   filter: grayscale(100%) opacity(0.6);
 }
 
-/* --------------------------------- */
 /* ----- Work -----*/
-/* --------------------------------- */
 
 .work-boxes {
   padding-block-start: var(--gutter-x-large);
