@@ -1,5 +1,5 @@
 
-### Portifólio - Ricardo Atakiama
+### Portifólio - Ricardo Atakiama 
 
 Este projeto ajudou a explorar algumas animações e código sem framework
 
