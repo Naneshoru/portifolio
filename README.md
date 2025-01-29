@@ -1,6 +1,8 @@
 
 ### Portifólio - Ricardo Atakiama
 
+Este projeto ajudou a explorar algumas animações e código sem framework
+
 ---
 
 ![portifolio](https://github.com/user-attachments/assets/72da7368-4bbb-4db3-a969-78859fdcfcc5)
@@ -12,3 +14,4 @@
 - Live Server (VS Code Extension)
 - IntersectionObserver API
 - Html, Css, Js
+
