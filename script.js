@@ -152,3 +152,20 @@ xpButtons.forEach(button => {
 });
 
 window.addEventListener('resize', updateLogosHeight);
+
+const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+})
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollToTopBtn.classList.add('active')
+  } else {
+    scrollToTopBtn.classList.remove('active')
+  }
+})

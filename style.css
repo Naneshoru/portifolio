@@ -1288,3 +1288,26 @@ input:checked {
     opacity: 0;
   }
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top svg {
+  block-size: 100%;
+  inline-size: 100%;
+  fill: var(--important);
+}
+
+.scroll-to-top.active {
+  display: block;
+  opacity: 1;
+}
